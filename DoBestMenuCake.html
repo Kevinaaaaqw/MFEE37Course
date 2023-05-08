@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>茶香2023蛋糕菜單</title>
+  <link rel="stylesheet" href="./CSS/resetcss.css">
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="./CSS/DoBest.css">
+  <style>
+  </style>
+  <script src="./CSS/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div id="main-page"
+    class="d-flex flex-column align-items-md-center bg-body justify-content-center position-relative ">
+    <a class="user-select-none" href="#top">
+      <div id="top-button" class="position-fixed bg-body">
+        <img src="./素材圖庫/Arrow - Up Square.png" alt="">
+      </div>
+    </a>
+    <div id="nav-bar-outside" class="col-12 d-flex justify-content-center fixed-top bg-body user-select-none ">
+      <!-- toggle-area 菜單------------------- -->
+      <div class="toggle-area d-none d-md-flex" id="menu">
+        <div class="d-flex w-1120 flex-column pt-5">
+          <div class="d-flex w-1120 flex-wrap ">
+            <div role=button
+              class="hover d-flex col-6 col-sm-4 justify-content-center justify-content-sm-start align-items-start ps-4 pe-4 mb-3 ">
+              <a class="d-flex col-12" href="./DoBestMenuBread.html">
+                <div class="me-3"><img class="img-size80" src="./素材圖庫/bread002.png" alt=""></div>
+                <div class="h5">麵包</div>
+              </a>
+            </div>
+            <div role=button
+              class="hover d-flex col-6 col-sm-4 justify-content-center justify-content-sm-start align-items-start ps-4 pe-4 mb-3">
+              <a class="d-flex col-12" href="./DoBestMenuCake.html">
+                <div class="me-3"><img class="img-size80" src="./素材圖庫/cakes001去背.png" alt=""></div>
+                <div class="h5">蛋糕</div>
+              </a>
+            </div>
+            <div role=button
+              class="hover d-flex col-6 col-sm-4 justify-content-center justify-content-sm-start align-items-start ps-4 pe-4 mb-3">
+              <a class="d-flex col-12" href="./DoBestMenuTea.html">
+                <div class="me-3"><img class="img-size80" src="./素材圖庫/tea001去背.png" alt=""></div>
+                <div class="h5">台灣好茶</div>
+              </a>
+            </div>
+            <div role=button
+              class="hover d-flex col-6 col-sm-4 justify-content-center justify-content-sm-start align-items-start ps-4 pe-4 mb-3">
+              <a class="d-flex col-12" href="./DoBestMenuCoffee.html">
+                <div class="me-3"><img class="img-size80" src="./素材圖庫/coffee001去背.png" alt=""></div>
+                <div class="h5">Café</div>
+              </a>
+            </div>
+            <div role=button
+              class="hover d-flex col-6 col-sm-4 justify-content-center justify-content-sm-start align-items-start ps-4 pe-4 mb-3">
+              <a class="d-flex col-12" href="./DoBestMenuBox.html">
+                <div class="me-3"><img class="img-size80" src="./素材圖庫/basket001.png" alt=""></div>
+                <div class="h5">餐盒</div>
+              </a>
+            </div>
+            <div role=button
+              class="hover d-flex col-6 col-sm-4 justify-content-center justify-content-sm-start align-items-start ps-4 pe-4 mb-3">
+              <div class="me-3"><img class="img-size80" src="./素材圖庫/food001去背.png" alt=""></div>
+              <div class="h5">超值下午茶</div>
+            </div>
+            <div role=button
+              class="hover d-flex col-6 col-sm-4 justify-content-center justify-content-sm-start align-items-start ps-4 pe-4 mb-3">
+              <div class="me-3"><img class="img-size80" src="./素材圖庫/local-products001去背.png" alt=""></div>
+              <div class="h5">在地農產品</div>
+            </div>
+          </div>
+          <div class="d-flex w-1120 justify-content-center pt-4 pb-4">
+            <a class="" href="./DoBestMenu.html">
+              <div class="btn border ps-4 pe-4 pt-2 pb-2 box-shadow">顯示所有餐點</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- -----------------導覽列----------------------- -->
+      <div id="nav-bar"
+        class="d-flex col-12 w-100 position-relative align-items-center justify-content-md-center justify-content-between">
+        <a class="col-md-3 col-6" href="./DoBest.html">
+          <div class="d-flex col-12 align-items-center">
+            <div class="d-flex"><img id="logo-img" src="./素材圖庫/chocolate-7836231_960_720.webp" alt=""></div>
+            <div class="h3 fw-bolder d-none576 h6-992 d-none d-md-flex ">茶香炫烤工坊</div>
+            <div class="h3 fw-bolder h6-992 d-flex d-md-none ">茶香</div>
+          </div>
+        </a>
+        <div class="d-none d-md-flex  h-100 col-6 align-items-center  justify-content-between ps-5">
+          <div class="h-100 d-flex flex-wrap position-relative ">
+            <div class="h-100 col-12 navbar-text-inner d-flex align-items-center" id="food-menu">
+              <div class="me-2  align-items-center d-flex">享受美食<img id="arrow-down-sign" class="img-size20 me-2"
+                  src="./素材圖庫/arrow-left-sign-to-navigate.png" alt=""></div>
+                  <div class="position-absolute col-12 top-100px nav-border-danger border-radius8"></div>
+            </div>
+          </div>
+          <div class="h-100 d-flex align-items-center row me-1 ms-1 position-relative">
+            <div class="col-12 navbar-text-inner ">最新消息</div>
+          </div>
+          <div class="h-100 d-flex row align-items-center me-1 ms-1 position-relative">
+            <a href="./DoBestNowSelling.html"><div class="col-12 navbar-text-inner">現正推出</div></a>
+          </div>
+          <div class="h-100 row d-flex align-items-center me-1 ms-1 position-relative">
+            <div class="col-12 navbar-text-inner">企業永續</div>
+          </div>
+          <div class="h-100 d-flex row align-items-center me-1 ms-1 position-relative">
+            <div class="col-12 navbar-text-inner">尋找門市</div>
+          </div>
+        </div>
+        <div class="d-none d-md-flex  col-3 align-items-center justify-content-end p-5 position-relative">
+          <div id="logoin-icon" role="button" class=""><img src="./素材圖庫/Frame 10.png" alt=""></div>
+          <!-- 登入、註冊選單-------------------------------- -->
+          <div id="logoin-menu"
+            class="d-flex position-absolute justify-content-center align-items-center border bg-body">
+            <div class="d-flex flex-row justify-content-center align-items-center flex-wrap">
+              <div id="member-logoin-button" class=" btn btn-danger col-12 mb-3" data-bs-toggle="modal"
+                data-bs-target="#account-area-a">會員登入</div>
+              <div class=" btn btn-danger col-12 ">註冊</div>
+            </div>
+          </div>
+        </div>
+        <!-- md後的瀏覽畫面----------------------------- -->
+        <!-- md後的瀏覽畫面----------------------------- -->
+        <!-- md後的瀏覽畫面----------------------------- -->
+        <div data-bs-toggle="collapse" data-bs-target="#menu-md-area" role="button" class="d-md-none d-flex justify-content-center col-3"><img
+            class="img-size40" src="./素材圖庫/menu.png" alt=""></div>
+        <div id="menu-md-area"
+          class="d-md-none position-absolute w-100 top-100pxa bg-body flex-wrap ps-3 pt-4 pb-4 border collapse">
+          <div data-bs-toggle="collapse" data-bs-target="#menu-md"
+            class="col-12 h-100 d-flex align-items-center position-relative mb-3" id="food-menu-md">
+            <div class="navbar-text-inner">享受美食</div>
+            <img id="arrow-down-sign" class="img-size10 ms-2" src="./素材圖庫/arrow-left-sign-to-navigate.png" alt="">
+          </div>
+          <div class="collapse" id="menu-md">
+            <div class="col-12 d-grid more-gride-1 border border-radius8">
+              <div role=button class="hover d-flex  ps-4 pe-4 mb-3 ">
+                <a class="d-flex navbar-text-inner align-items-center mt-5 col-12" href="./DoBestMenuBread.html">
+                  <div class="me-3"><img class="img-size80" src="./素材圖庫/bread002.png" alt=""></div>
+                  <div class="h5">麵包</div>
+                </a>
+              </div>
+              <div role=button class="hover d-flex  ps-4 pe-4 mb-3">
+                <a class="d-flex navbar-text-inner align-items-center mt-5 col-12" href="./DoBestMenuCake.html">
+                  <div class="me-3"><img class="img-size80" src="./素材圖庫/cakes001去背.png" alt=""></div>
+                  <div class="h5">蛋糕</div>
+                </a>
+              </div>
+              <div role=button class="hover d-flex  ps-4 pe-4 mb-3">
+                <a class="d-flex navbar-text-inner align-items-center mt-5 col-12" href="./DoBestMenuTea.html">
+                  <div class="me-3"><img class="img-size80" src="./素材圖庫/tea001去背.png" alt=""></div>
+                  <div class="h5">台灣好茶</div>
+                </a>
+              </div>
+              <div role=button class="hover d-flex  ps-4 pe-4 mb-3">
+                <a class="d-flex navbar-text-inner align-items-center mt-5 col-12" href="./DoBestMenuCoffee.html">
+                  <div class="me-3"><img class="img-size80" src="./素材圖庫/coffee001去背.png" alt=""></div>
+                  <div class="h5">Café</div>
+                </a>
+              </div>
+              <div role=button class="hover d-flex  ps-4 pe-4 mb-3">
+                <a class="d-flex navbar-text-inner align-items-center mt-5 col-12" href="./DoBestMenuBox.html">
+                  <div class="me-3"><img class="img-size80" src="./素材圖庫/basket001.png" alt=""></div>
+                  <div class="h5">餐盒</div>
+                </a>
+              </div>
+              <div role=button class="hover d-flex  ps-4 pe-4 mb-3">
+                <a class="d-flex navbar-text-inner align-items-center mt-5 col-12" href="">
+                  <div class="me-3 "><img class="img-size80" src="./素材圖庫/food001去背.png" alt=""></div>
+                  <div class="h5">超值下午茶</div>
+                </a>
+              </div>
+              <div role=button class="hover d-flex  ps-4 pe-4 mb-3">
+                <a class="d-flex navbar-text-inner align-items-center mt-5 col-12" href="">
+                  <div class="me-3 "><img class="img-size80" src="./素材圖庫/local-products001去背.png" alt=""></div>
+                  <div class="h5">在地農產品</div>
+                </a>
+              </div>
+              <div class="d-flex w-1120 ps-4 pt-4 pb-4">
+                <a class="" href="./DoBestMenu.html">
+                  <div class="btn border ps-4 pe-4 pt-2 pb-2 box-shadow">顯示所有餐點</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 h-100 d-flex align-items-center position-relative mb-3">
+            <div class="col-12 navbar-text-inner ">最新消息</div>
+          </div>
+          <div class="col-12 h-100 d-flex align-items-center position-relative mb-3">
+            <a href="./DoBestNowSelling.html"><div class="col-12 navbar-text-inner">現正推出</div></a>
+          </div>
+          <div class="col-12 h-100 d-flex align-items-center position-relative mb-3">
+            <div class="col-12 navbar-text-inner">企業永續</div>
+          </div>
+          <div class="col-12 h-100 d-flex align-items-center position-relative mb-3">
+            <div class="col-12 navbar-text-inner">尋找門市</div>
+          </div>
+          <div role="button" id="member-logoin-button" class="navbar-text-inner" data-bs-toggle="modal"
+            data-bs-target="#account-area-a">會員登入</div>
+        </div>
+      </div>
+    </div>
+    <!-- 會員登入或註冊-------------------------------------- -->
+    <div class="modal fade" data-bs-backdrop="static" id="account-area-a">
+      <div class="modal-dialog modal-dialog-centered">
+        <div id="account-area" class="modal-content d-flex flex-column align-items-center">
+          <div class="d-flex col-12 justify-content-end"><button type="button" class="btn-close  mt-3 me-3"
+              data-bs-dismiss="modal"></button></div>
+          <div class="d-flex align-items-center mt-2"><img class="img-size80"
+              src="./素材圖庫/chocolate-7836231_960_720.webp" alt="">
+          </div>
+          <div class="h2 mt-3 mb-4">登入</div>
+          <div class="d-flex col-8 flex-column mt-2">
+            <div class="d-flex col-12 position-relative  align-items-center mb-3">
+              <input class="input col-12" autocomplete="off" id="account-input" type="text" value="">
+              <label id="account-lable" for="account-input" class="account-text-span">郵件地址帳號</label>
+            </div>
+            <div id="account-tip"></div>
+            <div class="d-flex col-12 position-relative align-items-center mt-3 mb-2">
+              <input class="input col-12" autocomplete="new-password" id="account-input-1" type="password" value="">
+              <label id="account-lable-1" for="account-input-1" class="account-text-span">請輸入密碼</label>
+            </div>
+            <div id="password-tip" class="mt-1"></div>
+            <div class="mt-2"><a class="h6 hover" href="">
+                <div>忘記郵件地址或密碼?</div>
+              </a></div>
+          </div>
+          <div class="justify-content-between align-items-center d-flex col-8 mt-4 ">
+            <div class="navbar-text-inner box-shadow pt-2 pb-2 ps-1 pe-1 border-radius8 ">建立帳戶</div>
+            <div class="btn bg-warning" id="logoin-button">登入</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 d-flex justify-content-center margin-top180px row ">
+      <div class="col-12 w-1120 d-flex flex-wrap">
+        <div class="col-12 col-md-3 border-radius8 ">
+          <div class="col-12 p-3 border-radius8 border mb-4 position-relative">
+            <a href="./DoBestMenu.html">
+              <div role="button" class="navbar-text-inner pt-3 pb-3 ps-4 fw-bolder">所有餐點</div>
+            </a>
+          </div>
+          <div class="col-12 ps-3 pe-3 pb-3 border-radius8 border">
+            <a href="./DoBestMenuBread.html">
+              <div role=button class="hover pt-4 align-items-center d-flex col-12 pt-2 pb-2 position-relative">
+                <div class="me-3"><img class="img-size80" src="./素材圖庫/bread002.png" alt=""></div>
+                <div class="h5">麵包</div>
+              </div>
+            </a>
+            <a href="./DoBestMenuCake.html">
+              <div role=button class="hover pt-4 align-items-center d-flex col-12 pt-2 pb-2 position-relative">
+                <div class="me-3"><img class="img-size80" src="./素材圖庫/cakes001去背.png" alt=""></div>
+                <div class="h5">蛋糕</div>
+                <div class="position-absolute nav-border-s-danger-2 h-100 col-12 top-0 start-0 w-0">
+                </div>
+              </div>
+            </a><a href="./DoBestMenuTea.html">
+              <div role=button class="hover pt-4 align-items-center d-flex col-12 pt-2 pb-2 position-relative">
+                <div class="me-3"><img class="img-size80" src="./素材圖庫/tea001去背.png" alt=""></div>
+                <div class="h5">台灣好茶</div>
+              </div>
+            </a><a href="./DoBestMenuCoffee.html">
+              <div role=button class="hover pt-4 align-items-center d-flex col-12 pt-2 pb-2 position-relative">
+                <div class="me-3"><img class="img-size80" src="./素材圖庫/coffee001去背.png" alt=""></div>
+                <div class="h5">Café</div>
+              </div>
+            </a><a href="./DoBestMenuBox.html">
+              <div role=button class="hover pt-4 align-items-center d-flex col-12 pt-2 pb-2 position-relative">
+                <div class="me-3"><img class="img-size80" src="./素材圖庫/basket001.png" alt=""></div>
+                <div class="h5">餐盒</div>
+              </div>
+            </a>
+            <div role=button class="hover pt-4 align-items-center d-flex col-12 pt-2 pb-2 position-relative">
+              <div class="me-3"><img class="img-size80" src="./素材圖庫/food001去背.png" alt=""></div>
+              <div class="h5">超值下午茶</div>
+            </div>
+            <div role=button class="hover pt-4 align-items-center d-flex col-12 pt-2 pb-2 position-relative">
+              <div class="me-3"><img class="img-size80" src="./素材圖庫/local-products001去背.png" alt=""></div>
+              <div class="h5">在地農產品</div>
+            </div>
+          </div>
+        </div>
+        <!-- 菜單區 -->
+        <!-- 菜單區 -->
+        <!-- 菜單區 -->
+        <div class="col-12 col-md-9 d-flex">
+          <div class="col-12 text-center font-size54 fw-bolder pb-3">蛋糕
+            <div class="col-12 text-center h1 fw-bolder more-grid p-5">
+              <div role=button class="hover d-flex col-12 pt-5 pb-5 flex-wrap">
+                <div class="col-12 me-3"><img class="img-size120" src="./素材圖庫/cake002天使蛋糕去背.png" alt="">
+                </div>
+                <div class="col-12 h5 pt-3">天使蛋糕</div>
+              </div>
+              <div role=button class="hover d-flex col-12 pt-5 pb-5 flex-wrap">
+                <div class="col-12 me-3"><img class="img-size120" src="./素材圖庫/cake003草莓奶油蛋糕去背.png" alt="">
+                </div>
+                <div class="col-12 h5 pt-3">草莓奶油蛋糕</div>
+              </div>
+              <div role=button class="hover d-flex col-12 pt-5 pb-5 flex-wrap">
+                <div class="col-12 me-3"><img class="img-size120" src="./素材圖庫/cake004哈尼生乳捲去背_.png" alt="">
+                </div>
+                <div class="col-12 h5 pt-3">哈尼生乳捲</div>
+              </div>
+              <div role=button class="hover d-flex col-12 pt-5 pb-5 flex-wrap">
+                <div class="col-12 me-3"><img class="img-size120" src="./素材圖庫/cake005經典蜂蜜蛋糕去背.png" alt="">
+                </div>
+                <div class="col-12 h5 pt-3">經典蜂蜜蛋糕</div>
+              </div>
+              <div role=button class="hover d-flex col-12 pt-5 pb-5 flex-wrap">
+                <div class="col-12 me-3"><img class="img-size120" src="./素材圖庫/cake006生乳波士頓派-芋泥布蕾去背.png" alt="">
+                </div>
+                <div class="col-12 h5 pt-3">生乳波士頓派-芋泥布蕾</div>
+              </div>
+              <div role=button class="hover d-flex col-12 pt-5 pb-5 flex-wrap">
+                <div class="col-12 me-3"><img class="img-size120" src="./素材圖庫/cake007芋見香緹去背.png" alt="">
+                </div>
+                <div class="col-12 h5 pt-3">芋見香緹</div>
+              </div>
+              <div role=button class="hover d-flex col-12 pt-5 pb-5 flex-wrap">
+                <div class="col-12 me-3"><img class="img-size120" src="./素材圖庫/cake008草莓乳酪慕斯去背.png" alt="">
+                </div>
+                <div class="col-12 h5 pt-3">草莓乳酪</div>
+              </div>
+              <div role=button class="hover d-flex col-12 pt-5 pb-5 flex-wrap">
+                <div class="col-12 me-3"><img class="img-size120" src="./素材圖庫/cake009聖托諾蕾泡芙塔去背.png" alt="">
+                </div>
+                <div class="col-12 h5 pt-3">聖托諾蕾泡芙塔</div>
+              </div>
+              <div role=button class="hover d-flex col-12 pt-5 pb-5 flex-wrap">
+                <div class="col-12 me-3"><img class="img-size120" src="./素材圖庫/cake010-宇治金時去背.png" alt="">
+                </div>
+                <div class="col-12 h5 pt-3">宇治金時</div>
+              </div>
+              <div role=button class="hover d-flex col-12 pt-5 pb-5 flex-wrap">
+                <div class="col-12 me-3"><img class="img-size120" src="./素材圖庫/cake011芋頭布丁去背.png" alt="">
+                </div>
+                <div class="col-12 h5 pt-3">芋頭布丁</div>
+              </div>
+              <div role=button class="hover d-flex col-12 pt-5 pb-5 flex-wrap">
+                <div class="col-12 me-3"><img class="img-size120" src="./素材圖庫/cake012花神帕蒂莎去背.png" alt="">
+                </div>
+                <div class="col-12 h5 pt-3">花神帕蒂莎</div>
+              </div>
+              <div role=button class="hover d-flex col-12 pt-5 pb-5 flex-wrap">
+                <div class="col-12 me-3"><img class="img-size120" src="./素材圖庫/cake013經典提拉米蘇去背.png" alt="">
+                </div>
+                <div class="col-12 h5 pt-3">經典提拉米蘇</div>
+              </div>
+              <div role=button class="hover d-flex col-12 pt-5 pb-5 flex-wrap">
+                <div class="col-12 me-3"><img class="img-size120" src="./素材圖庫/cake014千層蛋糕去背.png" alt="">
+                </div>
+                <div class="col-12 h5 pt-3">千層蛋糕</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 w-1120 d-flex pb-5 mb-5">
+      <div class="col-12 text-center h1 fw-bolder"><img class=" col-12" src="./素材圖庫/傳單001母親節蛋糕優惠.webp" alt="">
+      </div>
+    </div>
+    <div id="page-end" class="d-flex flex-column col-12 mt-5">
+      <div class="d-flex col-12 justify-content-between">
+        <div class="col-3">
+          <div class="h5 fw-bolder">關於我們</div>
+          <div>
+            <div class="h6">關於我們</div>
+            <div class="h6">品牌故事與承諾</div>
+            <div class="h6">新聞室</div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="h5 fw-bolder">聯絡我們</div>
+          <div>
+            <div class="h6">聯絡我們</div>
+            <div class="h6">常見問題</div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="h5 fw-bolder">企業徵才</div>
+          <div>
+            <div class="h6">企業徵才</div>
+            <div class="h6">加盟專區</div>
+            <div class="h6">職涯發展</div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="h5 fw-bolder">在地農產品合作</div>
+          <div>
+            <div class="h6">在地農產品合作</div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex col-12 justify-content-between">
+        <div class="d-flex col-6 align-items-center">
+          <div><img class="img-size40" src="./素材圖庫/facebook.png" alt=""></div>
+          <div><img class="img-size40 m-3 " src="./素材圖庫/youtube.png" alt=""></div>
+          <div><img class="img-size40" src="./素材圖庫/instagram.png" alt=""></div>
+        </div>
+        <div class="d-flex col-6 align-items-center justify-content-end">
+          <div><img class="m-3 " src="./素材圖庫/androidBadge.png" alt=""></div>
+          <div><img class="" src="./素材圖庫/iosBadge.png" alt=""></div>
+        </div>
+      </div>
+      <div class="d-flex col-12 justify-content-between border"></div>
+      <div class="d-flex col-12 justify-content-between mt-1">
+        <div class="col-6 d-flex align-items-center">
+          <div class="me-5 mb-5">網站使用條款</div>
+          <div class="me-5 mb-5">隱私權保護聲明</div>
+        </div>
+        <div class="col-6 d-flex align-items-center justify-content-end">
+          <div class="me-5 mb-5"><img class="img-size40" src="./素材圖庫/chocolate-7836231_960_720.webp" alt="">
+          </div>
+          <div class=" mb-5">© 2023.04.28 Make</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./DoBestjs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入</title>
+    <link rel="stylesheet" href="./CSS/resetcss.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/DoBest.css">
+    <style>
+    </style>
+    <script src="./CSS/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div id="main-page"
+        class="d-flex flex-column align-items-md-center bg-body justify-content-center position-relative ">
+        <!--   -------------------------- 頁首------------------------------------------------------- -->
+        <div id="nav-bar-outside" class="col-12 d-flex justify-content-center fixed-top bg-body user-select-none ">
+            <!-- toggle-area 菜單------------------- -->
+            <div class="toggle-area" id="menu">
+                <div class="d-flex w-1120 flex-column pt-5">
+                    <div class="d-flex w-1120 flex-wrap ">
+                        <div
+                            class="d-flex col-6 col-sm-4 justify-content-center justify-content-sm-start align-items-start ps-4 pe-4 mb-3 ">
+                            <div class="me-3"><img class="img-size80" src="./素材圖庫/bread002.png" alt=""></div>
+                            <div class="h5">麵包</div>
+                        </div>
+                        <div
+                            class="d-flex col-6 col-sm-4 justify-content-center justify-content-sm-start align-items-start ps-4 pe-4 mb-3">
+                            <div class="me-3"><img class="img-size80" src="./素材圖庫/cakes001去背.png" alt=""></div>
+                            <div class="h5">蛋糕</div>
+                        </div>
+                        <div
+                            class="d-flex col-6 col-sm-4 justify-content-center justify-content-sm-start align-items-start ps-4 pe-4 mb-3">
+                            <div class="me-3"><img class="img-size80" src="./素材圖庫/tea001去背.png" alt=""></div>
+                            <div class="h5">台灣好茶</div>
+                        </div>
+                        <div
+                            class="d-flex col-6 col-sm-4 justify-content-center justify-content-sm-start align-items-start ps-4 pe-4 mb-3">
+                            <div class="me-3"><img class="img-size80" src="./素材圖庫/coffee001去背.png" alt=""></div>
+                            <div class="h5">Café</div>
+                        </div>
+                        <div
+                            class="d-flex col-6 col-sm-4 justify-content-center justify-content-sm-start align-items-start ps-4 pe-4 mb-3">
+                            <div class="me-3"><img class="img-size80" src="./素材圖庫/basket001.png" alt=""></div>
+                            <div class="h5">餐盒</div>
+                        </div>
+                        <div
+                            class="d-flex col-6 col-sm-4 justify-content-center justify-content-sm-start align-items-start ps-4 pe-4 mb-3">
+                            <div class="me-3"><img class="img-size80" src="./素材圖庫/food001去背.png" alt=""></div>
+                            <div class="h5">超值下午茶</div>
+                        </div>
+                        <div
+                            class="d-flex col-6 col-sm-4 justify-content-center justify-content-sm-start align-items-start ps-4 pe-4 mb-3">
+                            <div class="me-3"><img class="img-size80" src="./素材圖庫/local-products001去背.png" alt=""></div>
+                            <div class="h5">在地農產品</div>
+                        </div>
+                    </div>
+                    <div class="d-flex w-1120 justify-content-center">
+                        <div class="btn border ps-4 pe-4 pt-2 pb-2 box-shadow mt-5 mb-5">顯示所有餐點</div>
+                    </div>
+                </div>
+            </div>
+            <!-- -----------------導覽列----------------------- -->
+            <div id="nav-bar"
+                class="d-flex col-12 w-100 justify-content-between position-relative align-items-center justify-content-center ">
+                <a class="col-3" href="#">
+                    <div class="d-flex col-12 align-items-center">
+                        <div class="d-flex"><img id="logo-img" src="./素材圖庫/chocolate-7836231_960_720.webp" alt=""></div>
+                        <div class="h3 fw-bolder d-none576 h6-992 d-flex">茶香炫烤工坊</div>
+                    </div>
+                </a>
+                <div class="d-flex col-6 align-items-center navbar justify-content-center  ">
+                    <div class="navbar-text m-1 position-relative">
+                        <div class="navbar-text-inner d-flex align-items-center" id="food-menu">
+                            <div class="me-2">享受美食</div><img id="arrow-down-sign" class="img-size20 me-2"
+                                src="./素材圖庫/arrow-left-sign-to-navigate.png" alt="">
+                        </div>
+                    </div>
+                    <div class="navbar-text m-1 position-relative">
+                        <div class="navbar-text-inner">最新消息</div>
+                    </div>
+                    <div class="navbar-text m-1 position-relative">
+                        <div class="navbar-text-inner">現正推出</div>
+                    </div>
+                    <div class="navbar-text m-1 position-relative">
+                        <div class="navbar-text-inner">企業永續</div>
+                    </div>
+                    <div class="navbar-text m-1 position-relative">
+                        <div class="navbar-text-inner">尋找門市</div>
+                    </div>
+                </div>
+                <div class="d-flex col-3 align-items-center justify-content-end p-5 position-relative">
+                    <div id="logoin-icon" role="button" class=""><img src="./素材圖庫/Frame 10.png" alt=""></div>
+                    <!-- 登入、註冊選單-------------------------------- -->
+                    <div id="logoin-menu"
+                        class="d-flex position-absolute justify-content-center align-items-center bg-body border">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div role="banner" class=" btn btn-danger mb-1">會員登入</div>
+                            <div>或</div>
+                            <div role="banner" class=" btn btn-danger mt-1">註冊</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 d-flex align-items-center justify-content-center vh-100">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#account-area-a">
+                Launch demo modal
+            </button>
+            <div class="modal fade" id="account-area-a"  >
+                <div class="modal-dialog modal-dialog-centered">
+                    <div id="account-area" class="modal-content d-flex flex-column align-items-center">
+                        <div class="d-flex align-items-center mt-2"><img class="img-size80"
+                                src="./素材圖庫/chocolate-7836231_960_720.webp" alt="">
+                        </div>
+                        <div class="h2 mt-3 mb-4">登入</div>
+                        <div class="d-flex col-8 flex-column mt-2">
+                            <div class="d-flex col-12 position-relative  align-items-center mb-3">
+                                <input class="input col-12" autocomplete="off" id="account-input" type="text" value="">
+                                <label id="account-lable" for="account-input" class="account-text-span">郵件地址帳號</label>
+                            </div>
+                            <div class="d-flex col-12 position-relative align-items-center mt-3 mb-2">
+                                <input class="input col-12" autocomplete="new-password" id="account-input-1"
+                                    type="password" value="">
+                                <label id="account-lable-1" for="account-input-1"
+                                    class="account-text-span">請輸入密碼</label>
+                            </div>
+                            <div class="navbar-text-inner">忘記郵件地址或密碼?</div>
+                        </div>
+                        <div class="justify-content-between align-items-center d-flex col-8 mt-4 ">
+                            <div class="navbar-text-inner box-shadow pt-2 pb-2 ps-1 pe-1 border-radius8 ">建立帳戶</div>
+                            <div class="btn bg-warning">下一步</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('food-menu').addEventListener('click', function () {
+            document.getElementById('arrow-down-sign').style.animationFillMode = `forwards`
+            document.getElementById('arrow-down-sign').style.animationDuration = `.5s`
+            document.getElementById('menu').style.animationFillMode = `forwards`
+            document.getElementById('menu').style.animationDuration = `.5s`
+            if (window.getComputedStyle(document.getElementById('arrow-down-sign')).animationName == 'none') {
+                document.getElementById('arrow-down-sign').style.animationName = `change1`
+            } else if (window.getComputedStyle(document.getElementById('arrow-down-sign')).animationName == 'change1') {
+                document.getElementById('arrow-down-sign').style.animationName = `change0`
+            } else {
+                document.getElementById('arrow-down-sign').style.animationName = `change1`
+            }
+            console.log(document.getElementById('menu').style.height)
+            if (document.getElementById('menu').style.height !== 'auto') {
+                document.getElementById('menu').style.height = `auto`
+                document.getElementById('menu').style.animationName = `open1`
+            } else {
+                document.getElementById('menu').style.height = `0px`
+                document.getElementById('menu').style.animationName = `open0`
+            }
+        })
+        document.getElementById('logoin-icon').addEventListener('click', function () {
+            document.getElementById('logoin-menu').style.animationFillMode = `forwards`
+            document.getElementById('logoin-menu').style.animationDuration = `.5s`
+            // console.log(window.getComputedStyle(document.getElementById('logoin-menu')).height)
+            if (window.getComputedStyle(document.getElementById('logoin-menu')).height !== '150px') {
+                document.getElementById('logoin-menu').style.animationName = `open2`
+            } else {
+                document.getElementById('logoin-menu').style.animationName = `open3`
+            }
+        })
+        // 非常艱難地做出類google登入介面input框架
+        document.getElementById('account-input').addEventListener('focus', function () {
+            document.getElementById('account-lable').style.top = '-8px'
+            document.getElementById('account-lable').style.fontSize = '12px'
+        })
+        document.getElementById('account-input').addEventListener('blur', function () {
+            if (document.getElementById('account-input').value != '' & document.getElementById('account-input').value.replaceAll(' ', '') != '') {
+                document.getElementById('account-lable').style.top = '-8px'
+                document.getElementById('account-lable').style.fontSize = '12px'
+            } else {
+                document.getElementById('account-lable').style.top = '15%'
+                document.getElementById('account-lable').style.fontSize = '16px'
+            }
+        })
+        document.getElementById('account-input-1').addEventListener('focus', function () {
+            document.getElementById('account-lable-1').style.top = '-8px'
+            document.getElementById('account-lable-1').style.fontSize = '12px'
+        })
+        document.getElementById('account-input-1').addEventListener('blur', function () {
+            if (document.getElementById('account-input-1').value != '' & document.getElementById('account-input').value.replaceAll(' ', '') != '') {
+                document.getElementById('account-lable-1').style.top = '-8px'
+                document.getElementById('account-lable-1').style.fontSize = '12px'
+            } else {
+                document.getElementById('account-lable-1').style.top = '15%'
+                document.getElementById('account-lable-1').style.fontSize = '16px'
+            }
+        })
+    </script>
+</body>
+
+</html>
