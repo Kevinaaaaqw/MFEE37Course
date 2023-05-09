@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<script>
+window.onload = function() {
+   add.onclick = function() {
+       op.value = '+'
+       myform.submit()
+   }
+   sub.onclick = function() {
+       op.value = '-'
+       myform.submit()
+   }
+   mul.onclick = function() {
+       op.value = '*'
+       myform.submit()
+   }
+   div.onclick = function() {
+       op.value = '/'
+       myform.submit()
+   }
+}
+</script>
+<body>
+<form id="myform" action="test.php" method="post">
+   A: <input name="a"><p></p>
+   B: <input name="b"><p></p>
+   <input type="hidden" id="op" name="op"><p></p>
+   <!-- <input type="submit" value="add"> -->
+   <button id="add">+</button>
+   <button id="sub">-</button>
+   <button id="mul">x</button>
+   <button id="div">/</button>
+</form>
+</body>
+</html>
+
+—------------------------------------------------------------------
+
+<?php
+// http://localhost/test.php?a=5&b=3
+$a = $_REQUEST['a'];
+$b = $_REQUEST['b'];
+$op = $_REQUEST['op'];
+switch ($op) {
+case '+':
+   $ans = $a + $b;
+   break;
+case '-':
+   $ans = $a - $b;
+   break;
+case '*':
+   $ans = $a * $b;
+   break;
+case '/':
+   $ans = $a / $b;
+   break;
+}
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+<?= "$a $op $b = $ans" ?>
+</body>
+</html>
+
+
+--------------------------------------------------------------------------自己寫的
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    window.onload=function(){
+        add.onclick=function(){
+            op.value="+"
+
+        }
+        sub.onclick=function(){
+            op.value="-"
+
+        }
+        cros.onclick=function(){
+            op.value="*"
+
+        }
+        mine.onclick=function(){
+            op.value="/"
+
+        }
+    }
+</script>
+<body>
+    <form id="abc" action="test.php" method="post">
+        a <input name="a"><p></p>
+        b <input name="b"><p></p>
+        <input type="hidden" id="op" name="op">
+<!-- 
+        <input type="submit" value="add"> -->
+       <button id="add">+</button>
+       <button id="sub">-</button>
+       <button id="cros">*</button>
+       <button id="mine">/</button>
+    </form>
+</body>
+</html>
+
+
+--------------------------------------------------------------------------自己寫的
+<?php
+// http://localhost/test.php?a=5&b=3
+$a = $_REQUEST['a'];
+$b = $_REQUEST['b'];
+$op = $_REQUEST['op'];
+switch ($op) {
+case '+':
+   $ans = $a + $b;
+   break;
+case '-':
+   $ans = $a - $b;
+   break;
+case '*':
+   $ans = $a * $b;
+   break;
+case '/':
+   $ans = $a / $b;
+   break;
+}
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+<?= "$a $op $b = $ans" ?>
+</body>
+</html>
+
+
+--------------------------------------------------------------------------自己寫的
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    window.onload = function () {
+        add.onclick = function () {
+            op.value = "add"
+            ajax()
+
+        }
+        sub.onclick = function () {
+            op.value = "sub"
+            ajax()
+        }
+        cros.onclick = function () {
+            op.value = "cros"
+            ajax()
+        }
+        mine.onclick = function () {
+            op.value = "mine"
+            ajax()
+        }
+    }
+    function ajax() {
+        let url = `test.php?a=${a.value}&b=${b.value}&op=${op.value}`
+        fetch(url)
+            .then(function (response) {
+                return response.text()
+            })
+            .then(function (text) {
+                anser.innerHTML = text
+            })
+    }
+</script>
+
+<body>
+    a <input id="a">
+    <p></p>
+    b <input id="b">
+    <p></p>
+    <input type="hidden" id="op">
+    <button id="add">+</button>
+    <button id="sub">-</button>
+    <button id="cros">*</button>
+    <button id="mine">/</button>
+    <br><br>
+    <div id="anser"> kk</div>
+</body>
+
+</html>
+
+--------------------------------------------------------------------------自己寫的
+<?php
+// http://localhost/test.php?a=5&b=3
+$a = $_REQUEST['a'];
+$b = $_REQUEST['b'];
+$op = $_REQUEST['op'];
+switch ($op) {
+    case 'add':
+        $op = '+';
+        $ans = $a + $b;
+        break;
+    case 'sub':
+        $op = '-';
+        $ans = $a - $b;
+        break;
+    case 'cros':
+        $op = '*';
+        $ans = $a * $b;
+        break;
+    case 'mine':
+        $op = '/';
+        $ans = $a / $b;
+        break;
+}
+
+?>
+<?= "$a $op $b = $ans" ?>
